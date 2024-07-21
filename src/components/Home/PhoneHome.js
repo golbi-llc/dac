@@ -5,7 +5,7 @@ import newsGraphic from "../../assets/imgs/graphics/phone_graphic.png"
 export default function PhoneHome() {
   return (
     <section id="phone" className="phone-section section">
-      {/* <img src={newsGraphic} className="phone-graphic-home section-graphic" alt='' /> */}
+
       <div className='phone-copy-container'> 
         <p className='copy phone-copy'>If you<span className='copy-bold'> <span className='phone-copy-underline'>have</span> a court case</span> in Santa Clara County that involves CPS (Department of Family and Children's Services) and need legal representation:
         </p>

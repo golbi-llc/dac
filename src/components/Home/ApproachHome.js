@@ -8,6 +8,7 @@ import approachGraphicRight from "../../assets/imgs/graphics/approach_graphic_ri
 import approachGraphicLeft from "../../assets/imgs/graphics/approach_graphic_left.png"
 import approachFamily from "../../assets/imgs/approach_family.jpg"
 import approachMomBaby from "../../assets/imgs/approach_mom.jpg"
+import PhoneHome from "./PhoneHome"
 
 
 export default function ApproachHome() {
@@ -35,6 +36,8 @@ export default function ApproachHome() {
         </div>
 
         <p className='approach-copy approach-highlight copy position-center'>Since 2008 DAC’s work has supported thousands of families reunifying with or preventing the removal of children from their family home.</p>
+
+        <PhoneHome />
       </div>
 
    
