@@ -31,7 +31,7 @@ import PageNotFound from './components/pages/PageNotFound';
 function App() {
 
   return (
-    <BrowserRouter basename="/">
+    <BrowserRouter>
         <ScrollToTop />
         <Routes>
           <Route element={<Layout />}>
