@@ -1,7 +1,7 @@
 {
   "name": "dac_portfolio",
   "version": "0.1.0",
-  "homepage": "https://dinardavis.github.io/dac_portfolio",
+  "homepage": "https://dinardavis.github.io/dac_portfolio/",
   "private": true,
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
