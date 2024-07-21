@@ -73,9 +73,9 @@ export default function MissionVision() {
       
           <div className="mission-graphic-marker white mission-graphic-marker-3"></div>
     
-          <p className='graphic-prongs prong-1 grid1-linear-gradient'>Providing a skilled interdisciplinary team to offer holistic client support</p>
-          <p className='graphic-prongs prong-2 grid2-linear-gradient'>Encouraging system improvement through innovative programming and child welfare best practices </p>
-          <p className='graphic-prongs prong-3 grid3-linear-gradient'>Employing early intervention strategies to help prevent the need for initial or prolonged system involvement </p>
+          <p className='graphic-prongs prong-1'>Providing a skilled interdisciplinary team to offer holistic client support</p>
+          <p className='graphic-prongs prong-2'>Encouraging system improvement through innovative programming and child welfare best practices </p>
+          <p className='graphic-prongs prong-3 '>Employing early intervention strategies to help prevent the need for initial or prolonged system involvement </p>
         </div>
 
         <div className='mission-bottom-content copy-bottom'>

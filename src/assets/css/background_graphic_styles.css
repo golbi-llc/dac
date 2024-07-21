@@ -4,7 +4,7 @@
 .section-graphic {
   position: absolute;
   z-index: -100;
-  opacity: .3;
+  opacity: .6;
 }
 
 
@@ -19,7 +19,7 @@
   right: -12rem;
   top: -8rem;
   height: 60%;
-  opacity: .8;
+  opacity: .6;
 }
 
 .intro-bottom {
@@ -27,6 +27,7 @@
   height: 95%;
   z-index: 2;
 }
+
 
 .approach-tile-graphic {
   position: absolute;
@@ -51,7 +52,7 @@
   top: 0;
   right: -4rem;
   height: 110%;
-  opacity: .3;
+  opacity: .6;
   z-index: 1;
 }
 
@@ -118,20 +119,12 @@
   height: 14rem;
 }
 
-.phone-graphic-home {
-  position: absolute;
-  top: 1rem;
-  left: 10%;
-  height: 45rem;
-  z-index: -1;
-}
-
 .news-graphic-home {
   position: absolute;
   bottom: 0;
   right: -5rem;
   width: 90rem;
-  z-index: -1;
+  z-index: -10;
 }
 
 .contact-graphic-left {
@@ -168,7 +161,7 @@
 .single-page-graphic {
   position: absolute;
   z-index: -1;
-  opacity: .2;
+  opacity: .4;
 }
 
 .single-page-top {
@@ -194,7 +187,7 @@
   right: 0;
   bottom: -15rem;
   height: 45rem;
-  opacity: .1;
+  opacity: .6;
 }
 
 .staff-graphic-left {
@@ -218,7 +211,6 @@
   .intro-right {
     z-index: 1;
   }
-
 
   .contact-graphic-left {
     left: 0;

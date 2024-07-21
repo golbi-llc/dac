@@ -354,30 +354,15 @@ section {
 }
 
 .grid1-linear-gradient {
-  background-image:
-  linear-gradient(
-    to bottom right,
-    hsl(var(--clr-background-2)),
-    hsl(209, 100%, 14%)
-  );
+  background-image: linear-gradient(to bottom right, hsl(var(--clr-background-2)), #032b51b9, #032b51, #032b51);
 }
 
 .grid2-linear-gradient {
-  background-image:
-  linear-gradient(
-    to bottom right,
-    hsl(var(--clr-background-2)),
-    hsl(209, 100%, 25%)
-  );
+  background-image: linear-gradient(to bottom right, hsl(var(--clr-background-2)), #034e8bb9, #034e8b, #034e8b);
 }
 
 .grid3-linear-gradient {
-  background-image:
-  linear-gradient(
-    to bottom right,
-    hsl(var(--clr-background-2)),
-    hsl(209, 71%, 46%)
-  );
+  background-image: linear-gradient(to bottom right, hsl(var(--clr-background-2)), #1871bab9, #1871ba, #1871ba);
 }
 
 .position-left {
@@ -472,7 +457,7 @@ section {
   color: hsl(var(--clr-white));
   font-size: 7rem;
   font-weight: 600;
-  text-shadow: 3px 3px 4px hsl(var(--clr-primary), 0.6);
+  text-shadow: 3px 3px 4px #9d9b9b;
   z-index: 2;
 }
 
@@ -606,7 +591,7 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 7rem 0 6rem;
+  padding: 7rem 0 0;
 }
 
 .approach-header {
@@ -1217,49 +1202,111 @@ section {
 /* RIGHTS HOME BANNER */
 
 .rights-container {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 0 2rem;
+  padding: 0;
 }
 
 .rights-banner {
+  position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  max-width: 1100px;
-  min-width: 1100px;
-  padding: 1rem;
-  font-size: 1.8rem;
-  border-top: 2px solid hsl(var(--clr-primary));
-  border-bottom: 2px solid hsl(var(--clr-primary));
-  font-weight: 500;
+  width: 100%;
+  padding: 0 5rem;
 }
 
-.rights-banner > * {
-  margin: 0 4rem;
+/* .rights-banner > * {
   white-space: nowrap;
+} */
+
+.rights-content {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
+
+
+.rights-graphic-left {
+  position: absolute;
+  top: 0;
+  left: -80px;
+  height: 100%;
+  opacity: .6;
+  z-index: 1;
+}
+
+.rights-graphic-right {
+  position: absolute;
+  top: 0;
+  right: -80px;
+  height: 100%;
+  opacity: .6;
+  z-index: 1;
+}
+
+.rights-graphic-left-mobile {
+  position: absolute;
+  top: 0;
+  left: 40px;
+  height: 100%;
+  opacity: .6;
+  z-index: 1;
+}
+
+.rights-graphic-right-mobile {
+  position: absolute;
+  top: 0;
+  right: 40px;
+  height: 100%;
+  opacity: .6;
+  z-index: 1;
+}
+
+
+.rights-graphic-left-mobile,
+.rights-graphic-right-mobile {
+    display: none;
+  }
 
 .rights-header {
-  color: hsl(var(--clr-primary));
-  font-weight: 600;
+  align-self: center;
+  color: hsl(var(--clr-white));
+  font-weight: 200;
+  font-size: 2.3rem;
+}
+
+.rights-dac-logo {
+  height: auto;
+  width: 115px;
+  margin: 1rem;
+}
+
+.rights-link-container {
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .rights-cta {
-  background-color: hsl(var(--clr-primary));
+  padding: .8rem 2.5rem;
+  background-color: var(--clr-burgundy);
   color: hsl(var(--clr-white));
-  border: none;
-  padding: 1rem 1.5rem;
-  font-size: 1.8rem;
+  border: 1px solid hsl(var(--clr-white));
+  border-radius: .4rem;
+  font-size: 1.6rem;
+  font-weight: 200;
   cursor: pointer;
   transition: all .2s ease-in-out;
 }
 
 .rights-cta:hover {
-  background-color: hsl(var(--clr-secondary));
-  color: hsl(var(--clr-primary));
+  background-color: hsl(var(--clr-white));
+  color: var(--clr-burgundy);
 }
 
 /* NEWS HOMEPAGE SECTION */
@@ -2292,12 +2339,12 @@ select {
   min-height: 125px;
   padding: 1rem;
   background-color: hsl(var(--clr-white));
-  color: hsl(var(--clr-white));
+  color: hsl(var(--clr-primary));
   text-align: center;
   font-size: 1.4rem;
   font-weight: 300;
   border-radius: .2rem;
-  box-shadow: 2px 2px 15px #fdfdfdb5;
+  box-shadow: 2px 2px 15px #032b5160;
 }
 
 .prong-1 {
@@ -2369,13 +2416,13 @@ select {
 .mission-step-line {
   width: 95%;
   margin: .7rem 0;
-  border: 1px solid hsl(var(--clr-primary));
+  border: 1px solid hsl(var(--clr-secondary));
 }
 
 .mission-step-icon {
   position: absolute;
   right: 0;
-  color: hsl(var(--clr-primary));
+  color: hsl(var(--clr-secondary));
 }
 
 .mission-step-icon.dot {
@@ -2630,6 +2677,7 @@ select {
   text-align: right;
   font-size: 1.4rem;
   border: .7px solid hsl(var(--clr-white));
+  background-color: #861657;
   padding: 1rem;
 }
 
@@ -4149,7 +4197,7 @@ select {
   .intro-header {
     left: 0;
     font-size: 3.8rem;
-    text-shadow: 4px 4px 9px hsl(var(--clr-primary), 0.6);;
+    text-shadow: 4px 4px 9px #5a5858;
     margin-left: 2rem;
   }
 

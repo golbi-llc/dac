@@ -31,7 +31,7 @@ import PageNotFound from './components/pages/PageNotFound';
 function App() {
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/dac_portfolio">
         <ScrollToTop />
         <Routes>
           <Route element={<Layout />}>

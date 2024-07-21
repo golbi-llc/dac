@@ -126,7 +126,7 @@ export default function Impact() {
           </div>
         </div>
        
-        <div className='impact-bottom-section burgundy-linear-gradient'>   
+        <div className='impact-bottom-section darkblue-linear-gradient'>   
           <img src={singlePageBottom} className='section-graphic single-page-graphic programs-bottom' alt='' />   
           <div className='impact-content-container impact-downloads-section '>
           <h1 className='programs section-subhead-white'>Interested in learning more about our impact?</h1>
