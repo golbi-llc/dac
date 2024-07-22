@@ -12,6 +12,8 @@ export default function NewsCarousel() {
   const [viewChange, setViewChange] = React.useState(false)
   const [newsDataImport, setNewsDataImport] = React.useState(newsData)
 
+  console.log(newsDataImport)
+
   React.useEffect(() => {
     const handleWindowResize = () => {
       setWindowWidth(window.innerWidth)
@@ -55,7 +57,7 @@ export default function NewsCarousel() {
     <div className='news-carousel'>
       <BsFillArrowLeftCircleFill className='carousel-arrow left-arrow' onClick={(shiftCarouselLeft)}/>
       <div className='carousel-items-container'>
-        {newsDataImport.map(item => {
+        {newsDataImport ? newsDataImport.map(item => {
               return (
                 <NewsCarouselItem 
                   styles={styles}
@@ -65,12 +67,13 @@ export default function NewsCarousel() {
                   date={item.date}
                   body={item.body}
                   img={item.img}
+                  imgDesc={item.imgDesc}
                   url={item.url}
                 />
               )
             }
           )
-        }  
+        : ""}  
       </div>
       <BsFillArrowRightCircleFill className='carousel-arrow right-arrow' onClick={(shiftCarouselRight)} />
     </div>
