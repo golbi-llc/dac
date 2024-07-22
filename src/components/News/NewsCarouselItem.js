@@ -4,9 +4,11 @@ import { BiSolidRightArrow } from 'react-icons/bi'
 
 
 export default function NewsCarouselItem(props) {
+  console.log(props.img)
+
 
   return (
-      <div className='carousel-item' style={props.styles}>
+     <div className='carousel-item' style={props.styles}>
         <Link to={`${props.url}/${props.id}`} className='carousel-item-link' >
         <img className='carousel-item-img' src={props.img} alt={props.imgDesc} />
         <h1 className='carousel-item-header'>{props.title}</h1>
