@@ -54,7 +54,8 @@ export default function NewsCarousel() {
     <div className='news-carousel'>
       <BsFillArrowLeftCircleFill className='carousel-arrow left-arrow' onClick={(shiftCarouselLeft)}/>
       <div className='carousel-items-container'>
-        {newsData.map(item => {
+      {newsData ? 
+        newsData.map(item => {
             return (
               <NewsCarouselItem 
                 styles={styles}
@@ -68,7 +69,8 @@ export default function NewsCarousel() {
               />
             )
           }
-        )}
+        )  
+      : ""}  
       </div>
       <BsFillArrowRightCircleFill className='carousel-arrow right-arrow' onClick={(shiftCarouselRight)} />
     </div>
