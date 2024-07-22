@@ -28,7 +28,7 @@ const newsData = [
     date: "July 1, 2024",
     author: "",
     preface: [""],
-    img: "../assets/imgs/news_images/corridor_MA.jpg",
+    img: "./images/news_images/corridor_MA.jpg",
     imgDesc: "Corridor Managing Attorney Hiring Notice", 
     video:"",
     video_desc: "",
@@ -55,7 +55,7 @@ const newsData = [
     article_link_copy: "Original press release ",
     article_link_last_word: "here",
     article_link: "https://santaclara.courts.ca.gov/news/superior-court-california-county-santa-clara-proudly-announces-appointment-new-judge ",
-    img: "../assets/imgs/news_images/cynthia_news.jpg",
+    img: "./images/news_images/cynthia_news.jpg",
     imgDesc: "Portrait of Judge Cynthia Chen",
     url: "/updates-articles"
   },
