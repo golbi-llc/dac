@@ -12,8 +12,6 @@ export default function NewsCarousel() {
   const [viewChange, setViewChange] = React.useState(false)
   const [newsDataImport, setNewsDataImport] = React.useState(newsData)
 
-  console.log(newsDataImport)
-
   React.useEffect(() => {
     const handleWindowResize = () => {
       setWindowWidth(window.innerWidth)
