@@ -8,10 +8,9 @@ export default function NewsCarouselItem(props) {
   return (
       <div className='carousel-item' style={props.styles}>
         <Link to={`${props.url}/${props.id}`} className='carousel-item-link' >
-        <img className='carousel-item-img' src={props.img} alt={props.imgDesc} />
         <img 
           className='carousel-item-img' 
-          src={require(`${props.img}`)} 
+          src={props.img} 
           alt={props.imgDesc}   
         />
         <h1 className='carousel-item-header'>{props.title}</h1>
