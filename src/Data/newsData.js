@@ -1,4 +1,4 @@
-const newsData = [
+export const newsData = [
 
   //  ARTICLE TEMPLATE DATA: COPY/PASTE NEW ARTICLE AND FILL IN INFO
   // {
