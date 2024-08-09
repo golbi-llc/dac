@@ -10,7 +10,7 @@ export default function NewsMain() {
     return (
       <Link to={`/updates-articles/${article.id}`} key={article.id}>
         <div className="article-container">
-          <img className="article-img" src={`$.{article.img}`} alt={article.imgDesc} />
+          <img className="article-img" src={`${article.img}`} alt={article.imgDesc} />
           <div className="article-copy">
             <h1 className="article-title">{article.title}</h1>
             <p className="article-date">{article.date}</p>

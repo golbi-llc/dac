@@ -55,7 +55,7 @@ const newsData = [
     article_link_copy: "Original press release ",
     article_link_last_word: "here",
     article_link: "https://santaclara.courts.ca.gov/news/superior-court-california-county-santa-clara-proudly-announces-appointment-new-judge ",
-    img: "../../assets/imgs/news_images/cynthia_news.jpg",
+    img: "./images/news_images/cynthia_news.jpg",
     imgDesc: "Portrait of Judge Cynthia Chen",
     url: "/updates-articles"
   },
