@@ -6,7 +6,7 @@ import singlePageLeft from "../../assets/imgs/graphics/singlepage_left.png"
 import { boardData } from '../../Data/boardData';
 
   export default function Board() {
-    const [boardBio, SetboardBio] = React.useState(boardData)
+    const [boardBio, setBoardBio] = React.useState(boardData)
 
     return (
       <section className='board-section section single-page-layout'>

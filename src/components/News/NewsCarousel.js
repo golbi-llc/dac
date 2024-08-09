@@ -55,23 +55,7 @@ export default function NewsCarousel() {
     <div className='news-carousel'>
       <BsFillArrowLeftCircleFill className='carousel-arrow left-arrow' onClick={(shiftCarouselLeft)}/>
       <div className='carousel-items-container'>
-        {newsDataImport ? newsDataImport.map(item => {
-              return (
-                <NewsCarouselItem 
-                  styles={styles}
-                  key={item.id}
-                  id={item.id}
-                  title={item.title}
-                  date={item.date}
-                  body={item.body}
-                  img={item.img}
-                  imgDesc={item.imgDesc}
-                  url={item.url}
-                />
-              )
-            }
-          )
-        : ""}  
+       <NewsCarouselItem />
       </div>
       <BsFillArrowRightCircleFill className='carousel-arrow right-arrow' onClick={(shiftCarouselRight)} />
     </div>
