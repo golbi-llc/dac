@@ -10,7 +10,7 @@ export default function NewsCarouselItem(props) {
         <Link to={`${props.url}/${props.id}`} className='carousel-item-link' >
         <img 
           className='carousel-item-img' 
-          src={props.img} 
+          src={`https://dinardavis.github.io/dac_portfolio/images/news_images/${props.carouselImg}`} 
           alt={props.imgDesc}   
         />
         <h1 className='carousel-item-header'>{props.title}</h1>

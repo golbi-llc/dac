@@ -29,6 +29,7 @@ export const newsData = [
     author: "",
     preface: [""],
     img: "./images/news_images/corridor_MA.jpg",
+    carouselImg: "corridor_MA.jpg",
     imgDesc: "Corridor Managing Attorney Hiring Notice", 
     video:"",
     video_desc: "",
