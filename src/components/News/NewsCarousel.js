@@ -1,8 +1,7 @@
 import React from 'react'
 import { BsFillArrowLeftCircleFill } from "react-icons/bs";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
-import { Link } from 'react-router-dom'
-import { BiSolidRightArrow } from 'react-icons/bi'
+import NewsCarouselItem from './NewsCarouselItem';
 import newsData from "../../Data/newsData";
 
 export default function NewsCarousel() {
@@ -56,26 +55,24 @@ export default function NewsCarousel() {
     <div className='news-carousel'>
       <BsFillArrowLeftCircleFill className='carousel-arrow left-arrow' onClick={(shiftCarouselLeft)}/>
       <div className='carousel-items-container'>
-       
-        {newsDataImport.map(item => {
-              return  <div className='carousel-item' style={item.styles}>
-                  <Link to={`${item.url}/${item.id}`} className='carousel-item-link' >
-                    <img 
-                      className='carousel-item-img' 
-                      src={`https://dinardavis.github.io/dac_portfolio/images/news_images/${item.carouselImg}`} 
-                      alt={item.imgDesc}   
-                    />
-                    <h1 className='carousel-item-header'>{item.title}</h1>
-                    <p className='carousel-item-date'>{item.date}</p> 
-                    <p className='carousel-item-summary'>{item.body[0].slice(0,150)}<span>{item.body[0].length > 149 ? "..." : ""}</span></p>
-                  </Link>
-                  <Link to={`${item.url}/${item.id}`} className='carousel-item-readmore' >
-                    <p className='link-blue-text'>Read More</p><BiSolidRightArrow />
-                  </Link>
-                </div>
+        {newsDataImport ? newsDataImport.map(item => {
+              return (
+                <NewsCarouselItem 
+                  styles={styles}
+                  key={item.id}
+                  id={item.id}
+                  title={item.title}
+                  date={item.date}
+                  body={item.body}
+                  img={item.img}
+                  carouselImg={item.carouselImg}
+                  imgDesc={item.imgDesc}
+                  url={item.url}
+                />
+              )
             }
           )
-        }  
+        : ""}  
       </div>
       <BsFillArrowRightCircleFill className='carousel-arrow right-arrow' onClick={(shiftCarouselRight)} />
     </div>
