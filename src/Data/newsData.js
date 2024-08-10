@@ -57,6 +57,7 @@ export const newsData = [
     article_link_last_word: "here",
     article_link: "https://santaclara.courts.ca.gov/news/superior-court-california-county-santa-clara-proudly-announces-appointment-new-judge ",
     img: "./images/news_images/cynthia_news.jpg",
+    carouselImg: "cynthia_news.jpg",
     imgDesc: "Portrait of Judge Cynthia Chen",
     url: "/updates-articles"
   },
@@ -76,6 +77,7 @@ export const newsData = [
     article_link_copy: "",
     article_link: "",
     img: "./images/news_images/frday1_2024.jpg",
+    carouselImg: "frday1_2024.jpg",
     imgDesc: "DAC staff at Family Reunification Day Celebration",
     url: "/updates-articles"
   },

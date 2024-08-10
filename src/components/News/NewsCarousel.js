@@ -3,7 +3,6 @@ import { BsFillArrowLeftCircleFill } from "react-icons/bs";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
 import { Link } from 'react-router-dom'
 import { BiSolidRightArrow } from 'react-icons/bi'
-import NewsCarouselItem from './NewsCarouselItem';
 import newsData from "../../Data/newsData";
 
 export default function NewsCarousel() {
@@ -63,7 +62,7 @@ export default function NewsCarousel() {
                   <Link to={`${item.url}/${item.id}`} className='carousel-item-link' >
                     <img 
                       className='carousel-item-img' 
-                      src={item.img} 
+                      src={`https://dinardavis.github.io/dac_portfolio/images/news_images/${item.carouselImg}`} 
                       alt={item.imgDesc}   
                     />
                     <h1 className='carousel-item-header'>{item.title}</h1>
