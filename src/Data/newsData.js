@@ -94,6 +94,7 @@ export const newsData = [
     article_link_copy: "",
     article_link: "",
     img: "./images/news_images/DAC_15.jpg",
+    carouselImg: "DAC_15.jpg",
     imgDesc: "Image of DAC staff at anniversary celebration",
     url: "/updates-articles"
   },
@@ -111,6 +112,7 @@ export const newsData = [
     article_link_last_word: "here",
     article_link: "https://news.santaclaracounty.gov/social-services-agency-director-daniel-little-receives-prestigious-award-dependency-advocacy-center",
     img: "./images/news_images/ssa_director.png",
+    carouselImg: "ssa_director.png",
     imgDesc: "Announcement of new CEO hiring, featuring Katie Joh",
     url: "/updates-articles"
   },
@@ -127,6 +129,7 @@ export const newsData = [
     article_link_copy: "",
     article_link: "",
     img: "./images/news_images/ceo.jpg",
+    carouselImg: "ceo.jpg",
     imgDesc: "Image of DAC CEO, Katie Joh",
     url: "/updates-articles"
   },
@@ -143,6 +146,7 @@ export const newsData = [
     article_link_copy: "",
     article_link: "",
     img: "./images/news_images/cornerstones.jpg",
+    carouselImg: "cornerstones.jpg",
     imgDesc: "Headline of dependency prevention article",
     url: "/updates-articles"
   }, 
@@ -159,6 +163,7 @@ export const newsData = [
     article_link_copy: "",
     article_link: "",
     img: "./images/news_images/washington-dc.jpg",
+    carouselImg: "washington-dc.jpg",
     imgDesc: "DAC staff at ABA conference",
     url: "/updates-articles"
   },
@@ -175,11 +180,10 @@ export const newsData = [
     article_link_copy: "",
     article_link: "",
     img: "./images/news_images/ashkalra.png",
+    carouselImg: "ashkalra.png",
     imgDesc: "DAC staff at ABA conference",
     url: "/updates-articles"
   },
-
-  
 ]
 
 export default newsData
