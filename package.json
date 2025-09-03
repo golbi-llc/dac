@@ -1,7 +1,7 @@
 {
   "name": "dac",
   "version": "0.1.0",
-  "homepage": "https://golbi-llc.github.io/dac",
+  "homepage": "https://golbi-llc.github.io/dac/",
   "private": true,
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
